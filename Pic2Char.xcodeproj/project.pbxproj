@@ -32,6 +32,7 @@
 		34341B851C1A72A600D45A3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34341B881C1A72A600D45A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34341B8A1C1A72A600D45A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34EAB2021C3D0EAD00956E2B /* Pic2Char.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Pic2Char.entitlements; sourceTree = "<group>"; };
 		34EB554F1C1BC0FD002CD25B /* LZXCharImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZXCharImg.h; sourceTree = "<group>"; };
 		34EB55501C1BC0FD002CD25B /* LZXCharImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZXCharImg.m; sourceTree = "<group>"; };
 		34EB55531C1BC217002CD25B /* LZXRecognizor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZXRecognizor.h; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		34341B7B1C1A72A600D45A3F /* Pic2Char */ = {
 			isa = PBXGroup;
 			children = (
+				34EAB2021C3D0EAD00956E2B /* Pic2Char.entitlements */,
 				34341B7C1C1A72A600D45A3F /* AppDelegate.h */,
 				34341B7D1C1A72A600D45A3F /* AppDelegate.m */,
 				34341B821C1A72A600D45A3F /* ViewController.h */,
@@ -136,6 +138,11 @@
 					34341B781C1A72A600D45A3F = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = JH34E8P89B;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -281,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pic2Char/Pic2Char.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Pic2Char/Info.plist;
@@ -295,6 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pic2Char/Pic2Char.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Pic2Char/Info.plist;
