@@ -61,6 +61,9 @@
 #pragma mark - setter
 - (void)setPicPath:(NSURL *)picPath {
     _picPath = picPath;
+    if (!picPath) {
+        return;
+    }
     self.textfiledPicPath.stringValue = picPath.relativePath;
     self.pathView.URL = picPath;
     
