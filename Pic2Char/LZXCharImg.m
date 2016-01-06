@@ -12,8 +12,6 @@
 
 @interface LZXCharImg ()
 
-@property (nonatomic, strong) NSMutableArray *outputStrs;
-
 @end
 
 char charSet[] = {' ', '.', ',', ':', '|', 'I', 'P', 'N', 'B', 'M'};
@@ -82,7 +80,6 @@ char charSet[] = {' ', '.', ',', ':', '|', 'I', 'P', 'N', 'B', 'M'};
         }
         
         // 4. 压缩后的图像颜色数组
-        self.outputStrs = [NSMutableArray arrayWithCapacity:countV];
         NSMutableString *output = [NSMutableString stringWithCapacity:countV * countH];
         UInt *pis1 = pis0;
         for (NSUInteger j = 0; j < countV; j++) {
@@ -138,4 +135,6 @@ char charSet[] = {' ', '.', ',', ':', '|', 'I', 'P', 'N', 'B', 'M'};
     NSData *data = [imgsArr dataOfGifFramesWithDuration:imgOriginal.duration];
     NSImage *imgReturn = [[NSImage alloc] initWithData:data];
     return imgReturn;
-}@end
+}
+
+@end
