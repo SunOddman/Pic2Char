@@ -129,7 +129,7 @@
 
 
 - (CGImageRef)CGImage {
-    CGImageRef img = (CGImageRef)CFBridgingRetain(objc_getAssociatedObject(self, @selector(CGImage)));
+    CGImageRef img = (__bridge CGImageRef)objc_getAssociatedObject(self, @selector(CGImage));
     if (self && NULL == img) {
         NSData *data = [self TIFFRepresentation];
         if (data) {

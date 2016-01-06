@@ -43,7 +43,6 @@
     
     CGImageRef imgRef = self.CGImage;
     CGSize size = CGSizeMake(CGImageGetWidth(imgRef), CGImageGetHeight(imgRef));
-    CGImageRelease(imgRef);
     
     [self lockFocus];
     //先设置 下面一个实例

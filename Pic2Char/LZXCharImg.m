@@ -61,7 +61,6 @@ char charSet[] = {' ', '.', ',', ':', '|', 'I', 'P', 'N', 'B', 'M'};
     UInt32 *pixels = imgF.Colors;
     NSInteger w = CGImageGetWidth(img);
     NSInteger h = CGImageGetHeight(img);
-    CGImageRelease(img);
     
     // 3. 划分图像区域，获取对应区域的平均颜色信息
     int cellW = 1;
