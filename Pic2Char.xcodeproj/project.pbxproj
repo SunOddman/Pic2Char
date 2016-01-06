@@ -32,7 +32,6 @@
 		34341B851C1A72A600D45A3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34341B881C1A72A600D45A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34341B8A1C1A72A600D45A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		344E84781C2B96C100C9DD68 /* LZXImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZXImageView.h; sourceTree = "<group>"; };
 		34EB554F1C1BC0FD002CD25B /* LZXCharImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZXCharImg.h; sourceTree = "<group>"; };
 		34EB55501C1BC0FD002CD25B /* LZXCharImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZXCharImg.m; sourceTree = "<group>"; };
 		34EB55531C1BC217002CD25B /* LZXRecognizor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZXRecognizor.h; sourceTree = "<group>"; };
@@ -53,7 +52,6 @@
 		34341B701C1A72A600D45A3F = {
 			isa = PBXGroup;
 			children = (
-				344E84781C2B96C100C9DD68 /* LZXImageView.h */,
 				34341B7B1C1A72A600D45A3F /* Pic2Char */,
 				34341B7A1C1A72A600D45A3F /* Products */,
 			);
