@@ -86,7 +86,6 @@ char charSet[] = {' ', '.', ',', ':', '|', 'I', 'P', 'N', 'B', 'M'};
         NSMutableString *output = [NSMutableString stringWithCapacity:countV * countH];
         UInt *pis1 = pis0;
         for (NSUInteger j = 0; j < countV; j++) {
-            NSMutableString *str = [NSMutableString stringWithCapacity:countH];
             for (NSUInteger i = 0; i < countH; i++) {
                 UInt32 color = *pis1;
                 // 5. 获取图像灰度
@@ -94,14 +93,12 @@ char charSet[] = {' ', '.', ',', ':', '|', 'I', 'P', 'N', 'B', 'M'};
                 
                 // 6. 匹配字符
                 UInt32 brIdx = brightness / 26;
-                [str appendFormat:@"%c", charSet[9 - brIdx]];
                 [output appendFormat:@"%c", charSet[9 - brIdx]];
                 //            printf("%1c", charSet[9 - brIdx]);
                 pis1 ++;
             }
             [output appendString:@"\n"];
             //        printf("\n");
-            [self.outputStrs addObject:str];
         }
         NSString *output1 = [output substringToIndex:output.length - 2];
         free(pixels);

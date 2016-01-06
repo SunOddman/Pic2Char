@@ -135,6 +135,7 @@
         if (data) {
             CGImageSourceRef source = CGImageSourceCreateWithData((CFDataRef)data, NULL);
             img = CGImageSourceCreateImageAtIndex(source, 0, NULL);
+            CFRelease(source);
             objc_setAssociatedObject(self, @selector(CGImage), CFBridgingRelease(img), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         }
     }

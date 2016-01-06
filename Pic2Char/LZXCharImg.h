@@ -16,6 +16,4 @@
 
 - (nonnull NSImage *)charsImageWithImage:(nonnull NSImage *)imgOriginal;
 
-- (void)saveNSImage:(nonnull NSImage *)image inFilePath:(nonnull NSString *)path;
-
 @end
